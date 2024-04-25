@@ -1,29 +1,50 @@
 @prefix : <http://example.com/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Create instances of different types
-:person1 rdf:type owl:NamedIndividual, :Parent .
-:person2 rdf:type owl:NamedIndividual, :Parent .
-:person3 rdf:type owl:NamedIndividual, :Child .
-:person4 rdf:type owl:NamedIndividual, :Child .
-:person5 rdf:type owl:NamedIndividual, :Child .
-:person6 rdf:type owl:NamedIndividual, :Child .
-:person7 rdf:type owl:NamedIndividual, :Person .
-:person8 rdf:type owl:NamedIndividual, :Person .
-:person9 rdf:type owl:NamedIndividual, :Person .
-:person10 rdf:type owl:NamedIndividual, :Person .
+:person1 rdf:type owl:NamedIndividual, :Parent ;
+         :age "30"^^xsd:integer .
+:person2 rdf:type owl:NamedIndividual, :Parent ;
+         :age "35"^^xsd:integer .
+:person3 rdf:type owl:NamedIndividual, :Child ;
+         :age "5"^^xsd:integer .
+:person4 rdf:type owl:NamedIndividual, :Child ;
+         :age "8"^^xsd:integer .
+:person5 rdf:type owl:NamedIndividual, :Child ;
+         :age "10"^^xsd:integer .
+:person6 rdf:type owl:NamedIndividual, :Child ;
+         :age "12"^^xsd:integer .
+:person7 rdf:type owl:NamedIndividual, :Person ;
+         :age "25"^^xsd:integer .
+:person8 rdf:type owl:NamedIndividual, :Person ;
+         :age "28"^^xsd:integer .
+:person9 rdf:type owl:NamedIndividual, :Person ;
+         :age "32"^^xsd:integer .
+:person10 rdf:type owl:NamedIndividual, :Person ;
+          :age "40"^^xsd:integer .
 
-:person11 rdf:type owl:NamedIndividual, :Person .
-:person12 rdf:type owl:NamedIndividual, :Person .
-:person13 rdf:type owl:NamedIndividual, :Person .
-:person14 rdf:type owl:NamedIndividual, :Person .
-:person15 rdf:type owl:NamedIndividual, :Person .
-:person16 rdf:type owl:NamedIndividual, :Person .
-:person17 rdf:type owl:NamedIndividual, :Person .
-:person18 rdf:type owl:NamedIndividual, :Person .
-:person19 rdf:type owl:NamedIndividual, :Person .
-:person20 rdf:type owl:NamedIndividual, :Person .
+:person11 rdf:type owl:NamedIndividual, :Person ;
+          :age "45"^^xsd:integer .
+:person12 rdf:type owl:NamedIndividual, :Person ;
+          :age "50"^^xsd:integer .
+:person13 rdf:type owl:NamedIndividual, :Person ;
+          :age "55"^^xsd:integer .
+:person14 rdf:type owl:NamedIndividual, :Person ;
+          :age "60"^^xsd:integer .
+:person15 rdf:type owl:NamedIndividual, :Person ;
+          :age "65"^^xsd:integer .
+:person16 rdf:type owl:NamedIndividual, :Person ;
+          :age "70"^^xsd:integer .
+:person17 rdf:type owl:NamedIndividual, :Person ;
+          :age "75"^^xsd:integer .
+:person18 rdf:type owl:NamedIndividual, :Person ;
+          :age "80"^^xsd:integer .
+:person19 rdf:type owl:NamedIndividual, :Person ;
+          :age "85"^^xsd:integer .
+:person20 rdf:type owl:NamedIndividual, :Person ;
+          :age "90"^^xsd:integer .
 
 # Connect the instances using properties
 :person1 :hasChild :person3 .

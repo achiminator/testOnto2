@@ -1,8 +1,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix : <http://example.com/> .
-
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 :FamilialRelation rdfs:subClassOf rdfs:Class ;
     rdfs:label "Familial Relation" .
 
@@ -14,16 +14,23 @@
 
 :Child rdfs:subClassOf :Person ;
     rdfs:label "Child" .
-
-# Define the properties
-:hasParent rdfs:subPropertyOf rdf:Property ;
-    rdfs:domain :Person ;
+:hasParent a owl:ObjectProperty ;
+    rdfs:domain :Child ;
     rdfs:range :Parent ;
-    rdfs:label "has Parent" .
-
-:hasChild rdfs:subPropertyOf rdf:Property ;
-    rdfs:domain :Person ;
+    rdfs:label "has parent"@en ;
+    rdfs:comment "The property that links a child to its parent."@en ;
+    .
+:age a owl:DatatypeProperty ;
+        rdfs:domain :Person ;
+        rdfs:range xsd:integer ;
+        rdfs:label "age"@en ;
+        rdfs:comment "The property that represents the age of a person."@en 
+        .
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Parent ;
     rdfs:range :Child ;
-    rdfs:label "has Child" .
+    rdfs:label "has child"@en ;
+    rdfs:comment "The property that links a parent to its child."@en ;
+    .
 
 # Define SHACL shapes
