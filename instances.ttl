@@ -1,28 +1,29 @@
 @prefix : <http://example.com/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # Create instances of different types
-:person1 rdf:type :Parent .
-:person2 rdf:type :Parent .
-:person3 rdf:type :Child .
-:person4 rdf:type :Child .
-:person5 rdf:type :Child .
-:person6 rdf:type :Child .
-:person7 rdf:type :Person .
-:person8 rdf:type :Person .
-:person9 rdf:type :Person .
-:person10 rdf:type :Person .
+:person1 rdf:type owl:namedIndividual, :Parent .
+:person2 rdf:type owl:namedIndividual, :Parent .
+:person3 rdf:type owl:namedIndividual, :Child .
+:person4 rdf:type owl:namedIndividual, :Child .
+:person5 rdf:type owl:namedIndividual, :Child .
+:person6 rdf:type owl:namedIndividual, :Child .
+:person7 rdf:type owl:namedIndividual, :Person .
+:person8 rdf:type owl:namedIndividual, :Person .
+:person9 rdf:type owl:namedIndividual, :Person .
+:person10 rdf:type owl:namedIndividual, :Person .
 
-:person11 rdf:type :Person .
-:person12 rdf:type :Person .
-:person13 rdf:type :Person .
-:person14 rdf:type :Person .
-:person15 rdf:type :Person .
-:person16 rdf:type :Person .
-:person17 rdf:type :Person .
-:person18 rdf:type :Person .
-:person19 rdf:type :Person .
-:person20 rdf:type :Person .
+:person11 rdf:type owl:namedIndividual, :Person .
+:person12 rdf:type owl:namedIndividual, :Person .
+:person13 rdf:type owl:namedIndividual, :Person .
+:person14 rdf:type owl:namedIndividual, :Person .
+:person15 rdf:type owl:namedIndividual, :Person .
+:person16 rdf:type owl:namedIndividual, :Person .
+:person17 rdf:type owl:namedIndividual, :Person .
+:person18 rdf:type owl:namedIndividual, :Person .
+:person19 rdf:type owl:namedIndividual, :Person .
+:person20 rdf:type owl:namedIndividual, :Person .
 
 # Connect the instances using properties
 :person1 :hasChild :person3 .
