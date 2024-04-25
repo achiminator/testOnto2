@@ -3,27 +3,27 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # Create instances of different types
-:person1 rdf:type owl:namedIndividual, :Parent .
-:person2 rdf:type owl:namedIndividual, :Parent .
-:person3 rdf:type owl:namedIndividual, :Child .
-:person4 rdf:type owl:namedIndividual, :Child .
-:person5 rdf:type owl:namedIndividual, :Child .
-:person6 rdf:type owl:namedIndividual, :Child .
-:person7 rdf:type owl:namedIndividual, :Person .
-:person8 rdf:type owl:namedIndividual, :Person .
-:person9 rdf:type owl:namedIndividual, :Person .
-:person10 rdf:type owl:namedIndividual, :Person .
+:person1 rdf:type owl:NamedIndividual, :Parent .
+:person2 rdf:type owl:NamedIndividual, :Parent .
+:person3 rdf:type owl:NamedIndividual, :Child .
+:person4 rdf:type owl:NamedIndividual, :Child .
+:person5 rdf:type owl:NamedIndividual, :Child .
+:person6 rdf:type owl:NamedIndividual, :Child .
+:person7 rdf:type owl:NamedIndividual, :Person .
+:person8 rdf:type owl:NamedIndividual, :Person .
+:person9 rdf:type owl:NamedIndividual, :Person .
+:person10 rdf:type owl:NamedIndividual, :Person .
 
-:person11 rdf:type owl:namedIndividual, :Person .
-:person12 rdf:type owl:namedIndividual, :Person .
-:person13 rdf:type owl:namedIndividual, :Person .
-:person14 rdf:type owl:namedIndividual, :Person .
-:person15 rdf:type owl:namedIndividual, :Person .
-:person16 rdf:type owl:namedIndividual, :Person .
-:person17 rdf:type owl:namedIndividual, :Person .
-:person18 rdf:type owl:namedIndividual, :Person .
-:person19 rdf:type owl:namedIndividual, :Person .
-:person20 rdf:type owl:namedIndividual, :Person .
+:person11 rdf:type owl:NamedIndividual, :Person .
+:person12 rdf:type owl:NamedIndividual, :Person .
+:person13 rdf:type owl:NamedIndividual, :Person .
+:person14 rdf:type owl:NamedIndividual, :Person .
+:person15 rdf:type owl:NamedIndividual, :Person .
+:person16 rdf:type owl:NamedIndividual, :Person .
+:person17 rdf:type owl:NamedIndividual, :Person .
+:person18 rdf:type owl:NamedIndividual, :Person .
+:person19 rdf:type owl:NamedIndividual, :Person .
+:person20 rdf:type owl:NamedIndividual, :Person .
 
 # Connect the instances using properties
 :person1 :hasChild :person3 .
