@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix : <http://example.com/> .
+
+:FamilialRelation rdfs:subClassOf rdfs:Class ;
+    rdfs:label "Familial Relation" .
+
+:Person rdfs:subClassOf rdfs:Class ;
+    rdfs:label "Person" .
+
+:Parent rdfs:subClassOf :Person ;
+    rdfs:label "Parent" .
+
+:Child rdfs:subClassOf :Person ;
+    rdfs:label "Child" .
+
+# Define the properties
+:hasParent rdfs:subPropertyOf rdf:Property ;
+    rdfs:domain :Person ;
+    rdfs:range :Parent ;
+    rdfs:label "has Parent" .
+
+:hasChild rdfs:subPropertyOf rdf:Property ;
+    rdfs:domain :Person ;
+    rdfs:range :Child ;
+    rdfs:label "has Child" .
+
+# Define SHACL shapes

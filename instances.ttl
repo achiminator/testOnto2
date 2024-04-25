@@ -1,0 +1,33 @@
+@prefix : <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Create instances of different types
+:person1 rdf:type :Parent .
+:person2 rdf:type :Parent .
+:person3 rdf:type :Child .
+:person4 rdf:type :Child .
+:person5 rdf:type :Child .
+:person6 rdf:type :Child .
+:person7 rdf:type :Person .
+:person8 rdf:type :Person .
+:person9 rdf:type :Person .
+:person10 rdf:type :Person .
+
+:person11 rdf:type :Person .
+:person12 rdf:type :Person .
+:person13 rdf:type :Person .
+:person14 rdf:type :Person .
+:person15 rdf:type :Person .
+:person16 rdf:type :Person .
+:person17 rdf:type :Person .
+:person18 rdf:type :Person .
+:person19 rdf:type :Person .
+:person20 rdf:type :Person .
+
+# Connect the instances using properties
+:person1 :hasChild :person3 .
+:person2 :hasChild :person4 .
+:person2 :hasChild :person5 .
+:person3 :hasParent :person1 .
+:person4 :hasParent :person2 .
+:person5 :hasParent :person2 .
